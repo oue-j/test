@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url('img/spotlight.jpg'); /* 背景画像のパスを指定 */
+    background-size: cover; /* 画像がコンテナにぴったり収まるようにサイズ調整 */
+    background-position: center; /* 画像が要素の中央に表示されるように位置を設定 */
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+
+.No1 {
+    padding: 20px 40px;
+    box-sizing: border-box; /* 内側の余白を含めた要素のサイズを指定 */
+    max-width: calc(100% - 20px); /* 画像の最大幅を計算して設定 */
+    height: auto;
+}
+
+/* 動画にフレームをつけたい */
+.video {
+    max-width: calc(100%); /* 画像の最大幅を計算して設定 */
+    height: auto;
+    padding: 0px 40px;
+    box-sizing: border-box; /* 内側の余白を含めた要素のサイズを指定 */
+    max-width: calc(100% - 20px); /* 画像の最大幅を計算して設定 */
+}
+
+
+  canvas {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: screen; /* オーバーレイを指定 */
+    z-index: 0;
+  }
+  
+
